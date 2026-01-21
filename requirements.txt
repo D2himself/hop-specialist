@@ -1,0 +1,6 @@
+datasets
+transformers
+unsloth
+trl
+accelerate
+pyyaml # For schema validation
