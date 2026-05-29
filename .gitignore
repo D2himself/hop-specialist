@@ -4,6 +4,10 @@
 # Reference tutorial notebooks (local-only, not part of project)
 notebooks/NVIDIA_DGX_Spark_hugging_face_llm_full_fine_tune_tutorial_VIDEO.ipynb
 
+# Local working docs (private project context + session journal)
+CLAUDE.md
+session-log.md
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
