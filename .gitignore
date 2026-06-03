@@ -210,7 +210,7 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
-
+.antigravitycli/9246ff21-0401-4931-adcc-dc38d6be40fb.json
 # Marimo
 marimo/_static/
 marimo/_lsp/
