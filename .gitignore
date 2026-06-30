@@ -4,6 +4,10 @@
 # Reference tutorial notebooks (local-only, not part of project)
 notebooks/NVIDIA_DGX_Spark_hugging_face_llm_full_fine_tune_tutorial_VIDEO.ipynb
 
+# Derived files
+data/train_*.jsonl
+data/test_*.jsonl
+
 # Local working docs (private project context + session journal)
 CLAUDE.md
 session-log.md
@@ -210,7 +214,9 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
-.antigravitycli/9246ff21-0401-4931-adcc-dc38d6be40fb.json
+.antigravitycli/
+
+
 # Marimo
 marimo/_static/
 marimo/_lsp/
