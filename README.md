@@ -6,11 +6,11 @@
 
 **Eval metric.** I score four things on each output.
 - Format adherence: does the output parse as valid YAML.
-- Target correctness: does target_entity match the GPT-4o teacher's choice. I judge this with an LLM that treats different phrasings of the same entity as equivalent.
-- Exact match: does the full YAML output match the teacher's output word for word.
+- Target correctness: does target_entity match one of the gold supporting-fact titles from HotpotQA itself. I judge this with an LLM that treats different phrasings of the same entity as equivalent.
+- Exact match: does target_entity match the teacher's target_entity word for word.
 - Thought adherence: does the thought field have content.
 
-HotpotQA has no first-hop annotation of its own. Its supporting_facts field is an unordered set of title and sentence id pairs, not an ordered reasoning chain. So the gold Hop-1 label used for grading comes from the teacher, not from the dataset.
+HotpotQA has no first-hop annotation of its own. Its supporting_facts field is an unordered set of title and sentence id pairs, not an ordered reasoning chain, so it can't tell me which entity belongs at hop 1 versus hop 2. That ordering is what the teacher provides. Target correctness grades against the dataset's gold titles directly. Exact match grades against the teacher's specific choice, since the teacher is the one source that picks out a first hop.
 
 **Results.** I fine-tuned Gemma-3-270M on 379 examples labeled by GPT-4o and evaluated it on a held-out set of 95 questions. I trained two versions to test whether a system prompt helps a model this small. One version had a fixed system turn stating the task and the schema. The other had none. Both used the same training data and the same random split, so the system turn was the only difference between them.
 
