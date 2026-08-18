@@ -12,6 +12,10 @@ data/test_*.jsonl
 CLAUDE.md
 session-log.md
 article-notes.md
+experiments/results.md
+
+# Large local artifacts (not durable storage)
+model.safetensors
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
