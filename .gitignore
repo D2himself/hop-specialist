@@ -10,12 +10,16 @@ data/test_*.jsonl
 
 # Local working docs (private project context + session journal)
 CLAUDE.md
+AGENTS.md
 session-log.md
 article-notes.md
 experiments/results.md
 
 # Large local artifacts (not durable storage)
 model.safetensors
+gemma3-270m-hop1-sys.zip
+gemma3-270m-hop1-sys/ 
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

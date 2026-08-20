@@ -4,3 +4,4 @@ unsloth
 trl
 accelerate
 pyyaml # For schema validation
+huggingface_hub # For pushing the model and dataset to the Hub
